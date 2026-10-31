@@ -1,8 +1,0 @@
-{
-  "seed": 3906,
-  "epochs": 7,
-  "training_questions": 684,
-  "device": "cpu",
-  "seconds": 4.972140550613403,
-  "scale": 1.3234041929244995
-}
