@@ -1,0 +1,277 @@
+{
+  "weights": {
+    "pair300": 0.08999999999999998,
+    "delta_mass401": 0.81,
+    "attention_pair1401": 0.1
+  },
+  "scales": {
+    "old0": 1.977795958518982,
+    "old1": 3.45265531539917,
+    "old2": 2.760756254196167,
+    "old3": 2.6099936962127686,
+    "old4": 2.4204273223876953,
+    "old5": 3.7338674068450928,
+    "bce300": 3.15433406829834,
+    "bce301": 3.8118398189544678,
+    "bce302": 3.365541696548462,
+    "pair300": 7.151822566986084,
+    "pair301": 3.6327829360961914,
+    "pair302": 3.3157079219818115,
+    "mass300": 3.795475482940674,
+    "mass301": 1.5749787092208862,
+    "mass302": 2.3060076236724854,
+    "delta_bce400": 5.568044185638428,
+    "delta_bce401": 3.452683210372925,
+    "delta_bce402": 6.147000312805176,
+    "delta_mass400": 7.596378326416016,
+    "delta_mass401": 5.438114166259766,
+    "delta_mass402": 6.249371528625488,
+    "delta_uniform400": 6.819952011108398,
+    "delta_uniform401": 1.3993046283721924,
+    "delta_uniform402": 5.979689598083496,
+    "hard710": 2.9640660285949707,
+    "hard711": 3.406679153442383,
+    "hard712": 3.264333486557007,
+    "hard713": 2.980156898498535,
+    "group900": 7.499019145965576,
+    "group901": 5.201773166656494,
+    "group902": 7.478989601135254,
+    "group903": 3.315143585205078,
+    "group904": 3.2110190391540527,
+    "group905": 6.907419204711914,
+    "attention_pair1400": 7.988927841186523,
+    "attention_pair1401": 2.732567071914673,
+    "attention_pair1402": 4.2818756103515625,
+    "attention_uniform1400": 0.8646837472915649,
+    "attention_uniform1401": 0.9654527306556702,
+    "attention_uniform1402": 1.9803858995437622
+  },
+  "sources": {
+    "old0": {
+      "kind": "old",
+      "path": "runs/model/model0.pt",
+      "bytes": 638729
+    },
+    "old1": {
+      "kind": "old",
+      "path": "runs/model/model1.pt",
+      "bytes": 638729
+    },
+    "old2": {
+      "kind": "old",
+      "path": "runs/model/model2.pt",
+      "bytes": 638729
+    },
+    "old3": {
+      "kind": "old",
+      "path": "runs/model/model3.pt",
+      "bytes": 638729
+    },
+    "old4": {
+      "kind": "old",
+      "path": "runs/model/model4.pt",
+      "bytes": 638729
+    },
+    "old5": {
+      "kind": "old",
+      "path": "runs/model/model5.pt",
+      "bytes": 638729
+    },
+    "bce300": {
+      "kind": "rich",
+      "path": "runs\\v2\\bce300.pt",
+      "bytes": 1177205
+    },
+    "bce301": {
+      "kind": "rich",
+      "path": "runs\\v2\\bce301.pt",
+      "bytes": 1177205
+    },
+    "bce302": {
+      "kind": "rich",
+      "path": "runs\\v2\\bce302.pt",
+      "bytes": 1177205
+    },
+    "pair300": {
+      "kind": "rich",
+      "path": "runs\\v2\\pair300.pt",
+      "bytes": 1177221
+    },
+    "pair301": {
+      "kind": "rich",
+      "path": "runs\\v2\\pair301.pt",
+      "bytes": 1177221
+    },
+    "pair302": {
+      "kind": "rich",
+      "path": "runs\\v2\\pair302.pt",
+      "bytes": 1177221
+    },
+    "mass300": {
+      "kind": "rich",
+      "path": "runs\\v2\\mass300.pt",
+      "bytes": 1177221
+    },
+    "mass301": {
+      "kind": "rich",
+      "path": "runs\\v2\\mass301.pt",
+      "bytes": 1177221
+    },
+    "mass302": {
+      "kind": "rich",
+      "path": "runs\\v2\\mass302.pt",
+      "bytes": 1177221
+    },
+    "delta_bce400": {
+      "kind": "delta",
+      "path": "runs\\v2\\delta_bce400.pt",
+      "bytes": 2127317
+    },
+    "delta_bce401": {
+      "kind": "delta",
+      "path": "runs\\v2\\delta_bce401.pt",
+      "bytes": 2127317
+    },
+    "delta_bce402": {
+      "kind": "delta",
+      "path": "runs\\v2\\delta_bce402.pt",
+      "bytes": 2127317
+    },
+    "delta_mass400": {
+      "kind": "delta",
+      "path": "runs\\v2\\delta_mass400.pt",
+      "bytes": 2127333
+    },
+    "delta_mass401": {
+      "kind": "delta",
+      "path": "runs\\v2\\delta_mass401.pt",
+      "bytes": 2127333
+    },
+    "delta_mass402": {
+      "kind": "delta",
+      "path": "runs\\v2\\delta_mass402.pt",
+      "bytes": 2127333
+    },
+    "delta_uniform400": {
+      "kind": "delta",
+      "path": "runs\\v2\\delta_uniform400.pt",
+      "bytes": 2127381
+    },
+    "delta_uniform401": {
+      "kind": "delta",
+      "path": "runs\\v2\\delta_uniform401.pt",
+      "bytes": 2127381
+    },
+    "delta_uniform402": {
+      "kind": "delta",
+      "path": "runs\\v2\\delta_uniform402.pt",
+      "bytes": 2127381
+    },
+    "hard710": {
+      "kind": "hard",
+      "path": "runs\\v2\\hard710.pt",
+      "bytes": 638741
+    },
+    "hard711": {
+      "kind": "hard",
+      "path": "runs\\v2\\hard711.pt",
+      "bytes": 638741
+    },
+    "hard712": {
+      "kind": "hard",
+      "path": "runs\\v2\\hard712.pt",
+      "bytes": 638741
+    },
+    "hard713": {
+      "kind": "hard",
+      "path": "runs\\v2\\hard713.pt",
+      "bytes": 638741
+    },
+    "group900": {
+      "kind": "group",
+      "path": "runs\\v2\\group900.pt",
+      "bytes": 1175905
+    },
+    "group901": {
+      "kind": "group",
+      "path": "runs\\v2\\group901.pt",
+      "bytes": 1175905
+    },
+    "group902": {
+      "kind": "group",
+      "path": "runs\\v2\\group902.pt",
+      "bytes": 1175905
+    },
+    "group903": {
+      "kind": "group",
+      "path": "runs\\v2\\group903.pt",
+      "bytes": 1175905
+    },
+    "group904": {
+      "kind": "group",
+      "path": "runs\\v2\\group904.pt",
+      "bytes": 1175905
+    },
+    "group905": {
+      "kind": "group",
+      "path": "runs\\v2\\group905.pt",
+      "bytes": 1175905
+    },
+    "attention_pair1400": {
+      "kind": "attention",
+      "path": "runs\\v2\\attention_pair1400.pt",
+      "bytes": 2242389
+    },
+    "attention_pair1401": {
+      "kind": "attention",
+      "path": "runs\\v2\\attention_pair1401.pt",
+      "bytes": 2242389
+    },
+    "attention_pair1402": {
+      "kind": "attention",
+      "path": "runs\\v2\\attention_pair1402.pt",
+      "bytes": 2242389
+    },
+    "attention_uniform1400": {
+      "kind": "attention",
+      "path": "runs\\v2\\attention_uniform1400.pt",
+      "bytes": 2242497
+    },
+    "attention_uniform1401": {
+      "kind": "attention",
+      "path": "runs\\v2\\attention_uniform1401.pt",
+      "bytes": 2242497
+    },
+    "attention_uniform1402": {
+      "kind": "attention",
+      "path": "runs\\v2\\attention_uniform1402.pt",
+      "bytes": 2242497
+    }
+  },
+  "history": [
+    {
+      "step": 0,
+      "model": "delta_mass401",
+      "weight": 0.9,
+      "hard": 0.8788741751421094,
+      "weights": {
+        "pair300": 0.09999999999999998,
+        "delta_mass401": 0.9
+      }
+    },
+    {
+      "step": 1,
+      "model": "attention_pair1401",
+      "weight": 0.1,
+      "hard": 0.8845080086725354,
+      "weights": {
+        "pair300": 0.08999999999999998,
+        "delta_mass401": 0.81,
+        "attention_pair1401": 0.1
+      }
+    }
+  ],
+  "hard": 0.8845070600509644,
+  "all": 0.9486215710639954,
+  "asset_bytes": 5546943
+}

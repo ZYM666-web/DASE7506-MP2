@@ -1,0 +1,41 @@
+{
+  "records": [
+    {
+      "name": "attention_uniform1400",
+      "epoch": 1,
+      "hard": 0.8366197347640991,
+      "all": 0.927318274974823
+    },
+    {
+      "name": "attention_uniform1401",
+      "epoch": 1,
+      "hard": 0.8366197347640991,
+      "all": 0.927318274974823
+    },
+    {
+      "name": "attention_uniform1402",
+      "epoch": 5,
+      "hard": 0.8309859037399292,
+      "all": 0.9248120188713074
+    },
+    {
+      "name": "attention_pair1400",
+      "epoch": 42,
+      "hard": 0.8450704216957092,
+      "all": 0.9310777187347412
+    },
+    {
+      "name": "attention_pair1401",
+      "epoch": 3,
+      "hard": 0.8478873372077942,
+      "all": 0.932330846786499
+    },
+    {
+      "name": "attention_pair1402",
+      "epoch": 7,
+      "hard": 0.8535211086273193,
+      "all": 0.9348371028900146
+    }
+  ],
+  "seconds": 253.5490608215332
+}

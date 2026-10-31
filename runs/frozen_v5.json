@@ -1,0 +1,894 @@
+{
+  "version": "V5",
+  "files": {
+    "config.json": {
+      "bytes": 1079,
+      "sha256": "f5ef124ba433f296fc50f6b467f35bc443fa8520ab76195047dade4e29451e1c"
+    },
+    "delta_mass400.pt": {
+      "bytes": 2127333,
+      "sha256": "decc649107a96c6390ab922d2c7a05eabec84ea8aa85c9d2737f0630d26e4aba"
+    },
+    "delta_mass401.pt": {
+      "bytes": 2127333,
+      "sha256": "255a02889ed289db9e69e64a8e79c2cb07f99992873dd270fe1f644a892909cb"
+    },
+    "delta_mass402.pt": {
+      "bytes": 2127333,
+      "sha256": "3c35717a7ff4d6a9e4c00c98f504801b88b048a26937887d41c43b15a1146037"
+    },
+    "delta_stats.npz": {
+      "bytes": 20180,
+      "sha256": "383bc2c492162def2229bb29a732a9c721918f4c25e55f305c3f81d9a06188ae"
+    },
+    "mass300.pt": {
+      "bytes": 1177221,
+      "sha256": "f2981e0b82854f2e5951e62acb669bb23c2494b9264ac6d242628101353b5efc"
+    },
+    "mass301.pt": {
+      "bytes": 1177221,
+      "sha256": "c146d06caa930848506c58cdeb9af80f2d3a7e958b9792f2b1567e883a05ec22"
+    },
+    "mass302.pt": {
+      "bytes": 1177221,
+      "sha256": "1a7f769fed0fcb61292683c52a1d0117f20d050bad8518a279ac5e7afb7e15c7"
+    },
+    "rank1700.cbm": {
+      "bytes": 199360,
+      "sha256": "57ece59c7e5c47ccdfb70dedefd25ff3007847839d9db9b9c82c3365d2ca8cd8"
+    },
+    "rank1701.cbm": {
+      "bytes": 238112,
+      "sha256": "360b6bee832fcc299176114787648a9dfc8b18b452a52c9e938faa5f1b1e5cae"
+    },
+    "rich_stats.npz": {
+      "bytes": 10340,
+      "sha256": "1009da40f051858d36699f0a8ec9a836459dc3ddedd1ec054d27a661e308c4cc"
+    },
+    "alignment/alignment_1_2500.pt": {
+      "bytes": 1574317,
+      "sha256": "5b6483da0818b0962afebb72d3a5ed38a48201234b826217db439d912a33333c"
+    },
+    "alignment/stats.npz": {
+      "bytes": 21378,
+      "sha256": "c759924c43712ae862bc4212da6fd25caefd0aaa7c077f808b3ce73d9b87d3ba"
+    },
+    "alignment/vocabulary.json": {
+      "bytes": 50404,
+      "sha256": "dfd51a9178e1d88236b6cf3d5ce8705eec5de206af7cd9650efb71d7e71e91a8"
+    },
+    "pairwise/pair.pt": {
+      "bytes": 601541,
+      "sha256": "32bd702c8f0f3c8d25039efa4e090c9c53b17ea8431408ca352028a9cd9f3da7"
+    },
+    "pairwise/stats.npz": {
+      "bytes": 18268,
+      "sha256": "9f061e4de9c55706b92a73f9f8aeb3ba4ffc7189cf07e9495548a0b937f5e087"
+    }
+  },
+  "sources": {
+    "alignment_model.py": "af29e62a7ef5edaeb34b5dedd9a819c01be98ba081275c9032e36260a7ba8456",
+    "analyze.py": "933779d7e7e5d08fc543f84907676b5eafe64bce29e779c6a228615dad8380ab",
+    "arithmetic_features.py": "bd0cdeea3f0185aa76d7e0feef9f89d728f13ac4062fce15680532d910a11ddb",
+    "attention_model.py": "0a9b6cca9b9862105c786a72f8fcbbb3bed334eb05d7e2667623a44a2e7fc254",
+    "baselines.py": "743de4039f7c76a443b4918d17eba8cfca5cbeaecfa7a96d2fe76f604969c7d0",
+    "base_scores_v4.py": "5ceff0c2be027aa11e38b26cfd8e32a9c63259ccf1222f1c4b051f5d72c448b0",
+    "build_evidence.py": "b241a34b621e24d93a8917b45b3aa5ced01adc672139889c3cc4d62c81219c28",
+    "check_data.py": "32f203e156e3019f87bb038ade4f303da21ca2f1694bb678a3ddc44661f0b533",
+    "common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "evaluate.py": "b3676ed496ee4c73815d163e57616391cf3f6084e6d6064bde7b0ae4cf3d14cc",
+    "evaluate_final.py": "76088fc8486239cf31f753d7d5ed0d302e6922048d98c7f43729fe63a54c751a",
+    "evaluate_v2.py": "0594b31f1e03acbc8674eb2d26b56001e5ac059a13c6c8eac6e1c8262efed577",
+    "evaluate_v4.py": "55206de511844be5a2b3977a64e2843290d161125c4ce593becf8a345a85221e",
+    "freeze_final.py": "ced063a4ed921ca526e4774b8f4fd06acfa3629d1d4d78b76f058983de0548f0",
+    "freeze_v2.py": "1a2eeb2faa01484e8b768bd59559865b747210fa1fcdebb2c5f26917438a2c1a",
+    "freeze_v4.py": "1ad5624fa165e01ffe8a60592bd8e2c45594bd263a38b0c1080e04159eaeff8e",
+    "group_features.py": "e9b930f597b21a9812cf8436cbcdae12b1b486c830da62a88a484181d3c9fd34",
+    "group_model.py": "5c0c84c41bd34a713a4900c58fe8736754eb84048198795253f0261d043319f2",
+    "model.py": "36ebeff194723eb66f63c7373db4b45455f32b923fdbdc0ca2f321050af82217",
+    "operation_profiles.py": "811c696a2635db29587f5b8847d47cabc7d714b114a7feccbcece083b26fa0da",
+    "predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "programs.py": "85a1d1a2b64582141b07944aeb587dccbc008f82c4629a7a9f54f30c7a8cee44",
+    "quality_features.py": "cd882516c54844d3b1f377b6696dbd9afdcfe3b28ca19d52d444780f2ddddf4d",
+    "refresh_freeze.py": "fad349f982a5a6debba9e56c0f25b9813389e600d61793dc12d3b509edeb49ae",
+    "relational_model.py": "2570d8df074e7cd49ab657c95f09f24660abb5439fc0d5ccd2236fc587d1dcd1",
+    "rich_features.py": "8383f5768f5b268490d8d468b99a435e8e162b38cb3eba62bf2a0ab33fbcdfaf",
+    "rich_model.py": "bf65cbff14d4ccb86b7f7b39b6b98d9b15e2493c907d9acb02de6c53212dbf70",
+    "scores_v4.py": "5e6bebc74711b6de8906badfa18883c80991208a3f8e6510c355fdb41b9d91c4",
+    "score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "select_individual.py": "1d61749db12d6406672633936afcf846ee38c47da987bef0b520c37dbef978a5",
+    "select_v2.py": "c960aa8317537c3f9de2a2ad62007b46f1f26c72310970cd8ffe9f9dc632f060",
+    "select_v3.py": "59ed0842263066d9d7d9b15ac82f8381a5f33e300d2b02baead08c966ef5841d",
+    "submission.py": "f5e1583243fbfec38fb7c7e3a53246eef93fdafea9e989c302155bd75b0d11ac",
+    "submission_final.py": "df934f967b31b41a3ef4ddd33b2672462fd8f92580c073b2584a4a54b4a1e315",
+    "submission_v2.py": "e0ac6567e7d71d484c1456f6a686a0828bd8ac181c744981fd1e568e3e1a5a4a",
+    "submission_v4.py": "1d87638501d2a78b66127d117e34425e202abae28eb31a123a0697afaddbe1b8",
+    "submission_v5.py": "646aa523234b99f1664201bba8d670e9918d892f15f5e54135c652fe09166f10",
+    "train.py": "7c03bc9df7d54be90fc01e1f2f0efed00fa02907e7a0d28f3159642467aa7355",
+    "train_arith.py": "d6a8f84d3d18cb866e66506e1aedb822c6a9a4fd6059eedf4b85112fef6d67ab",
+    "train_attention.py": "c6b1b1fa33d7ebd7567141c7d3fdd41ea05b094a552f640371b85437aa73c81e",
+    "train_cat.py": "891531408bdc322ec90a613c7da99f99a35824c87d872344cf89666ac1ae57c4",
+    "train_contrast.py": "f37c77db23a54120592b64669c14a6547fc0f893533bf0c501d154d88f03f30e",
+    "train_delta.py": "24da0135e0b5d4825fca7f660cb7e8db02db0df9afe22a87a9b68be83ec99be0",
+    "train_group.py": "6a08491bcf88dd9457e15c7c6c64ed2b53a0791935ee5817be0435e9ff1388aa",
+    "train_hard.py": "7380d0603cf62f8caf8493c0a0b1a9a692530a2af8500dcc3c63107f24f063f2",
+    "train_rank.py": "19470669833a333939509f4ba200b1c09d6706268ac395da1db7286c0ebddd98",
+    "train_rich.py": "18d2968556aa8cfe95ae05ebaf252452edc5d12588df734bf80fc737ede31ce3",
+    "train_stack.py": "5cc017948a1e47e62e9d0b1f0bb43969b0c50b9fa4b8950642a90ea3f994fe23",
+    "train_svm.py": "80f65fa56a8b8de35bfab7ff3ad9e27bbb152463c624964dffdadd9e203a3857",
+    "train_text.py": "4cd78986a15369cff2255dcc24e12c1dbd4df2be4a6b3d563fb22c6fd07cd9d9",
+    "train_verify.py": "94c4cd1a911596769ff59b0c4c2838e11b07daa6915e338aea7765a52bee25ca",
+    "verify_arithmetic.py": "8cc793f1336f4c0665b53df979b61caaa5082c1cd7ea18a20bd0922cff16702c",
+    "verify_package.py": "5281a292f988e1ac3e2dc9bdfa3746e0fd0c30323e9bc68fc6dc57ed0f6a75e8",
+    "verify_v4.py": "a886047388603b52ef63a9adb13ed2531661a529a669aefdd2c6e84a7a476c74"
+  },
+  "asset_bytes": 12648641,
+  "selection": {
+    "criterion": "Singleton accuracy, hard >=319/355, then hard/all accuracy, fewer members/bytes/weight. Defined before this test.",
+    "branches": [
+      {
+        "name": "dynamic_d96_a1_r0_s0_3101",
+        "seed": 3101,
+        "dimension": 96,
+        "auxiliary": true,
+        "residual": false,
+        "singleton_focus": false,
+        "epoch": 0,
+        "scale": 1.138576626777649,
+        "weight": 0.25,
+        "hard": 0.8985915780067444,
+        "all": 0.9548872113227844,
+        "singleton": 0.7368420958518982,
+        "folder": "dynamic_gpu_bundle"
+      },
+      {
+        "name": "relational_3801",
+        "seed": 3801,
+        "hidden": 64,
+        "focus": 3,
+        "loss": "pair",
+        "decay": 0.1,
+        "epoch": 2,
+        "scale": 1.3415051698684692,
+        "weight": 0.1,
+        "hard": 0.9014084339141846,
+        "singleton": 0.7368420958518982,
+        "all": 0.9561403393745422,
+        "folder": "relational_bundle"
+      },
+      {
+        "name": "directpair_3906",
+        "seed": 3906,
+        "hidden": 64,
+        "focus": 0,
+        "loss": "pair",
+        "decay": 0.1,
+        "epoch": 6,
+        "scale": 1.3169009685516357,
+        "weight": 0.25,
+        "hard": 0.9014084339141846,
+        "singleton": 0.7456140518188477,
+        "all": 0.9561403393745422,
+        "folder": "direct_pair_bundle"
+      }
+    ],
+    "best": {
+      "weights": [
+        0,
+        0,
+        0.25
+      ],
+      "hard": 0.9014084507042254,
+      "singleton": 0.7456140350877193,
+      "all": 0.956140350877193,
+      "assetbytes": 12648489
+    },
+    "results": [
+      {
+        "weights": [
+          0,
+          0,
+          0
+        ],
+        "hard": 0.9014084507042254,
+        "singleton": 0.7280701754385965,
+        "all": 0.956140350877193,
+        "assetbytes": 12028680
+      },
+      {
+        "weights": [
+          0,
+          0,
+          0.1
+        ],
+        "hard": 0.9014084507042254,
+        "singleton": 0.7368421052631579,
+        "all": 0.956140350877193,
+        "assetbytes": 12648489
+      },
+      {
+        "weights": [
+          0,
+          0,
+          0.25
+        ],
+        "hard": 0.9014084507042254,
+        "singleton": 0.7456140350877193,
+        "all": 0.956140350877193,
+        "assetbytes": 12648489
+      },
+      {
+        "weights": [
+          0,
+          0,
+          0.5
+        ],
+        "hard": 0.8788732394366198,
+        "singleton": 0.7105263157894737,
+        "all": 0.9461152882205514,
+        "assetbytes": 12648489
+      },
+      {
+        "weights": [
+          0,
+          0.1,
+          0
+        ],
+        "hard": 0.9014084507042254,
+        "singleton": 0.7368421052631579,
+        "all": 0.956140350877193,
+        "assetbytes": 12648489
+      },
+      {
+        "weights": [
+          0,
+          0.1,
+          0.1
+        ],
+        "hard": 0.8985915492957747,
+        "singleton": 0.7368421052631579,
+        "all": 0.9548872180451128,
+        "assetbytes": 13268298
+      },
+      {
+        "weights": [
+          0,
+          0.1,
+          0.25
+        ],
+        "hard": 0.895774647887324,
+        "singleton": 0.7280701754385965,
+        "all": 0.9536340852130326,
+        "assetbytes": 13268298
+      },
+      {
+        "weights": [
+          0,
+          0.1,
+          0.5
+        ],
+        "hard": 0.8760563380281691,
+        "singleton": 0.7192982456140351,
+        "all": 0.9448621553884712,
+        "assetbytes": 13268298
+      },
+      {
+        "weights": [
+          0,
+          0.25,
+          0
+        ],
+        "hard": 0.8929577464788733,
+        "singleton": 0.7280701754385965,
+        "all": 0.9523809523809523,
+        "assetbytes": 12648489
+      },
+      {
+        "weights": [
+          0,
+          0.25,
+          0.1
+        ],
+        "hard": 0.8901408450704226,
+        "singleton": 0.7192982456140351,
+        "all": 0.9511278195488722,
+        "assetbytes": 13268298
+      },
+      {
+        "weights": [
+          0,
+          0.25,
+          0.25
+        ],
+        "hard": 0.8873239436619719,
+        "singleton": 0.7192982456140351,
+        "all": 0.949874686716792,
+        "assetbytes": 13268298
+      },
+      {
+        "weights": [
+          0,
+          0.25,
+          0.5
+        ],
+        "hard": 0.8732394366197183,
+        "singleton": 0.7017543859649122,
+        "all": 0.943609022556391,
+        "assetbytes": 13268298
+      },
+      {
+        "weights": [
+          0,
+          0.5,
+          0
+        ],
+        "hard": 0.8873239436619719,
+        "singleton": 0.7105263157894737,
+        "all": 0.949874686716792,
+        "assetbytes": 12648489
+      },
+      {
+        "weights": [
+          0,
+          0.5,
+          0.1
+        ],
+        "hard": 0.8845070422535212,
+        "singleton": 0.7192982456140351,
+        "all": 0.9486215538847118,
+        "assetbytes": 13268298
+      },
+      {
+        "weights": [
+          0,
+          0.5,
+          0.25
+        ],
+        "hard": 0.8760563380281691,
+        "singleton": 0.7105263157894737,
+        "all": 0.9448621553884712,
+        "assetbytes": 13268298
+      },
+      {
+        "weights": [
+          0,
+          0.5,
+          0.5
+        ],
+        "hard": 0.8704225352112676,
+        "singleton": 0.6929824561403509,
+        "all": 0.9423558897243107,
+        "assetbytes": 13268298
+      },
+      {
+        "weights": [
+          0.1,
+          0,
+          0
+        ],
+        "hard": 0.9014084507042254,
+        "singleton": 0.7280701754385965,
+        "all": 0.956140350877193,
+        "assetbytes": 15441150
+      },
+      {
+        "weights": [
+          0.1,
+          0,
+          0.1
+        ],
+        "hard": 0.895774647887324,
+        "singleton": 0.7280701754385965,
+        "all": 0.9536340852130326,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.1,
+          0,
+          0.25
+        ],
+        "hard": 0.8985915492957747,
+        "singleton": 0.7368421052631579,
+        "all": 0.9548872180451128,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.1,
+          0,
+          0.5
+        ],
+        "hard": 0.8816901408450705,
+        "singleton": 0.7192982456140351,
+        "all": 0.9473684210526315,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.1,
+          0.1,
+          0
+        ],
+        "hard": 0.8929577464788733,
+        "singleton": 0.7192982456140351,
+        "all": 0.9523809523809523,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "hard": 0.895774647887324,
+        "singleton": 0.7280701754385965,
+        "all": 0.9536340852130326,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.1,
+          0.1,
+          0.25
+        ],
+        "hard": 0.8929577464788733,
+        "singleton": 0.7192982456140351,
+        "all": 0.9523809523809523,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.1,
+          0.1,
+          0.5
+        ],
+        "hard": 0.8760563380281691,
+        "singleton": 0.7192982456140351,
+        "all": 0.9448621553884712,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.1,
+          0.25,
+          0
+        ],
+        "hard": 0.8929577464788733,
+        "singleton": 0.7280701754385965,
+        "all": 0.9523809523809523,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.1,
+          0.25,
+          0.1
+        ],
+        "hard": 0.8901408450704226,
+        "singleton": 0.7192982456140351,
+        "all": 0.9511278195488722,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.1,
+          0.25,
+          0.25
+        ],
+        "hard": 0.8873239436619719,
+        "singleton": 0.7192982456140351,
+        "all": 0.949874686716792,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.1,
+          0.25,
+          0.5
+        ],
+        "hard": 0.8732394366197183,
+        "singleton": 0.7017543859649122,
+        "all": 0.943609022556391,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.1,
+          0.5,
+          0
+        ],
+        "hard": 0.895774647887324,
+        "singleton": 0.7368421052631579,
+        "all": 0.9536340852130326,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.1,
+          0.5,
+          0.1
+        ],
+        "hard": 0.8845070422535212,
+        "singleton": 0.7192982456140351,
+        "all": 0.9486215538847118,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.1,
+          0.5,
+          0.25
+        ],
+        "hard": 0.8760563380281691,
+        "singleton": 0.7105263157894737,
+        "all": 0.9448621553884712,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.1,
+          0.5,
+          0.5
+        ],
+        "hard": 0.8676056338028169,
+        "singleton": 0.6929824561403509,
+        "all": 0.9411027568922306,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.25,
+          0,
+          0
+        ],
+        "hard": 0.8985915492957747,
+        "singleton": 0.7368421052631579,
+        "all": 0.9548872180451128,
+        "assetbytes": 15441150
+      },
+      {
+        "weights": [
+          0.25,
+          0,
+          0.1
+        ],
+        "hard": 0.8929577464788733,
+        "singleton": 0.7192982456140351,
+        "all": 0.9523809523809523,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.25,
+          0,
+          0.25
+        ],
+        "hard": 0.8929577464788733,
+        "singleton": 0.7192982456140351,
+        "all": 0.9523809523809523,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.25,
+          0,
+          0.5
+        ],
+        "hard": 0.8760563380281691,
+        "singleton": 0.7017543859649122,
+        "all": 0.9448621553884712,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.25,
+          0.1,
+          0
+        ],
+        "hard": 0.8929577464788733,
+        "singleton": 0.7192982456140351,
+        "all": 0.9523809523809523,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.25,
+          0.1,
+          0.1
+        ],
+        "hard": 0.8901408450704226,
+        "singleton": 0.7105263157894737,
+        "all": 0.9511278195488722,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.25,
+          0.1,
+          0.25
+        ],
+        "hard": 0.8901408450704226,
+        "singleton": 0.7192982456140351,
+        "all": 0.9511278195488722,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.25,
+          0.1,
+          0.5
+        ],
+        "hard": 0.8704225352112676,
+        "singleton": 0.7017543859649122,
+        "all": 0.9423558897243107,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.25,
+          0.25,
+          0
+        ],
+        "hard": 0.8873239436619719,
+        "singleton": 0.7105263157894737,
+        "all": 0.949874686716792,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.25,
+          0.25,
+          0.1
+        ],
+        "hard": 0.8929577464788733,
+        "singleton": 0.7280701754385965,
+        "all": 0.9523809523809523,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "hard": 0.8845070422535212,
+        "singleton": 0.7192982456140351,
+        "all": 0.9486215538847118,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ],
+        "hard": 0.8732394366197183,
+        "singleton": 0.7017543859649122,
+        "all": 0.943609022556391,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.25,
+          0.5,
+          0
+        ],
+        "hard": 0.8929577464788733,
+        "singleton": 0.7280701754385965,
+        "all": 0.9523809523809523,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.25,
+          0.5,
+          0.1
+        ],
+        "hard": 0.8873239436619719,
+        "singleton": 0.7280701754385965,
+        "all": 0.949874686716792,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "hard": 0.8704225352112676,
+        "singleton": 0.6929824561403509,
+        "all": 0.9423558897243107,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.25,
+          0.5,
+          0.5
+        ],
+        "hard": 0.8676056338028169,
+        "singleton": 0.6929824561403509,
+        "all": 0.9411027568922306,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.5,
+          0,
+          0
+        ],
+        "hard": 0.8929577464788733,
+        "singleton": 0.7192982456140351,
+        "all": 0.9523809523809523,
+        "assetbytes": 15441150
+      },
+      {
+        "weights": [
+          0.5,
+          0,
+          0.1
+        ],
+        "hard": 0.8929577464788733,
+        "singleton": 0.7192982456140351,
+        "all": 0.9523809523809523,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.5,
+          0,
+          0.25
+        ],
+        "hard": 0.8901408450704226,
+        "singleton": 0.7105263157894737,
+        "all": 0.9511278195488722,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.5,
+          0,
+          0.5
+        ],
+        "hard": 0.8676056338028169,
+        "singleton": 0.6842105263157895,
+        "all": 0.9411027568922306,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.5,
+          0.1,
+          0
+        ],
+        "hard": 0.8901408450704226,
+        "singleton": 0.7105263157894737,
+        "all": 0.9511278195488722,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.5,
+          0.1,
+          0.1
+        ],
+        "hard": 0.8929577464788733,
+        "singleton": 0.7192982456140351,
+        "all": 0.9523809523809523,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.5,
+          0.1,
+          0.25
+        ],
+        "hard": 0.8873239436619719,
+        "singleton": 0.7105263157894737,
+        "all": 0.949874686716792,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.5,
+          0.1,
+          0.5
+        ],
+        "hard": 0.8676056338028169,
+        "singleton": 0.6929824561403509,
+        "all": 0.9411027568922306,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.5,
+          0.25,
+          0
+        ],
+        "hard": 0.8901408450704226,
+        "singleton": 0.7192982456140351,
+        "all": 0.9511278195488722,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.5,
+          0.25,
+          0.1
+        ],
+        "hard": 0.8901408450704226,
+        "singleton": 0.7192982456140351,
+        "all": 0.9511278195488722,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "hard": 0.8873239436619719,
+        "singleton": 0.7192982456140351,
+        "all": 0.949874686716792,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.5,
+          0.25,
+          0.5
+        ],
+        "hard": 0.8704225352112676,
+        "singleton": 0.6929824561403509,
+        "all": 0.9423558897243107,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.5,
+          0.5,
+          0
+        ],
+        "hard": 0.8929577464788733,
+        "singleton": 0.7280701754385965,
+        "all": 0.9523809523809523,
+        "assetbytes": 16060959
+      },
+      {
+        "weights": [
+          0.5,
+          0.5,
+          0.1
+        ],
+        "hard": 0.8873239436619719,
+        "singleton": 0.7192982456140351,
+        "all": 0.949874686716792,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.5,
+          0.5,
+          0.25
+        ],
+        "hard": 0.8704225352112676,
+        "singleton": 0.6929824561403509,
+        "all": 0.9423558897243107,
+        "assetbytes": 16680768
+      },
+      {
+        "weights": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "hard": 0.8619718309859155,
+        "singleton": 0.6754385964912281,
+        "all": 0.9385964912280702,
+        "assetbytes": 16680768
+      }
+    ]
+  },
+  "test_evaluated": false
+}
